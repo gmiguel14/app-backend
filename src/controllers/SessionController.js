@@ -6,10 +6,10 @@ module.exports = {
 
     let user = await User.findOne({ email });
 
-    if(!user) {
+    if (!user) {
       user = await User.create({ email });
     }
 
     return res.json(user);
-  }
+  },
 };
