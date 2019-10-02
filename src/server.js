@@ -9,8 +9,6 @@ mongoose.connect('mongodb+srv://omnistack:omnistack@omnistack-3xv1r.mongodb.net/
   useUnifiedTopology: true
 });
 
-app.use(express.json);
-
+app.use(express.json());
 app.use(routes);
-
 app.listen(3333);
